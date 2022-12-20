@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Comments</name>
+    </assembly>
+    <members>
+        <member name="M:Comments.Program.Main(System.String[])">
+            <summary>This is main function</summary>
+            <param name="args">args input as string[]</param>
+            <returns>no return value</returns>
+        </member>
+    </members>
+</doc>
