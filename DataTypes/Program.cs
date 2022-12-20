@@ -18,6 +18,14 @@ namespace DataTypes
             Console.WriteLine("{0},{1},{2}", a, b, d);
             Console.WriteLine(d.ToString());
 
+            // Implicit Conversion
+            long l = a;
+            Console.WriteLine(l.ToString());
+
+            // Explicit Conversion
+            int dToInt = (int)d;
+            Console.WriteLine(dToInt.ToString());
+
         }
     }
 }
