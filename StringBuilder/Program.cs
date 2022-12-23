@@ -15,6 +15,13 @@ namespace MyStringBuilder
             sb.AppendJoin("*", strs);
 
             Console.WriteLine(sb.ToString());
+
+            string str = "ehsan";
+            for (int i = 0; i < 10; i++)
+            {
+                str = str + "a";
+            }
+            Console.WriteLine(str);
         }
     }
 }
