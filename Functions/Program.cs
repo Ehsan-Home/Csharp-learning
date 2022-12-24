@@ -54,10 +54,23 @@ Console.WriteLine($"{Func()[0]}");
 //     Console.WriteLine(item);
 // }
 
-(string, int, bool) tuple = ("hello", 42, true);
+(string name, int id, bool isFemale) person = ("ehsan", 123, false);
+(string name, int id, bool isFemale)[] persons = { ("ehsan", 123, false), ("arman", 124, false) };
 
-// Iterate over the elements of the tuple
-foreach (var element in tuple)
+Console.WriteLine("*****");
+foreach (var item in persons)
 {
-    Console.WriteLine(element);
+    Console.WriteLine(item.name);
 }
+
+// persons[0].id = 657;
+// Console.WriteLine($"persons {persons[0].name}");
+// Console.WriteLine($"persons {persons[0].id}");
+
+// person.id = 666;
+// person.name = "sara";
+// person.isFemale = true;
+
+// Console.WriteLine(person.id);
+// Console.WriteLine(person.name);
+// Console.WriteLine(person.isFemale);
