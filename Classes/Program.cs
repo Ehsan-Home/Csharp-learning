@@ -10,12 +10,17 @@ namespace Program
 
             bmw.ModelNumber = 9807;
 
-            Console.WriteLine(bmw.ModelNumber);
+            // Console.WriteLine(bmw.ModelNumber);
 
-            bmw.Model = "X3";
+            // bmw.Model = "X3";
 
-            Console.WriteLine(bmw.Model);
-            Console.WriteLine(bmw.Color);
+            // Console.WriteLine(bmw.Model);
+            // Console.WriteLine(bmw.Color);
+
+            bmw.Drive();
+
+            Car benz = new Car(987, "GLE400", 2018, 4, "Black", 5);
+            benz.Drive();
         }
     }
 }

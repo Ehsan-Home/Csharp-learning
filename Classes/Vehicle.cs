@@ -44,5 +44,10 @@ namespace Program
             get => _model;
             set => _model = value;
         }
+
+        public virtual void Drive()
+        {
+            Console.WriteLine("Vehicle is moving with the speed of 20 KM/h");
+        }
     }
 }
