@@ -9,22 +9,40 @@ namespace Program
         private int _year;
         private int _numberOfWheels;
 
-        public Vehicle(int modelNumber, string model, int year, int numberOfWheels)
+        public string Color
+        {
+            get; set;
+        }
+
+        public Vehicle(int modelNumber, string model, int year, int numberOfWheels, string inputColor)
         {
             _modelNumber = modelNumber;
             _model = model;
             _year = year;
             _numberOfWheels = numberOfWheels;
+            Color = inputColor;
         }
 
-        public int GetModelNumber()
+        // public int GetModelNumber()
+        // {
+        //     return _modelNumber;
+        // }
+
+        // public void SetModelNumber(int modelNumber)
+        // {
+        //     _modelNumber = modelNumber;
+        // }
+
+        public int ModelNumber
         {
-            return _modelNumber;
+            get { return _modelNumber; }
+            set { _modelNumber = value; }
         }
 
-        public void SetModelNumber(int modelNumber)
+        public string Model
         {
-            _modelNumber = modelNumber;
+            get => _model;
+            set => _model = value;
         }
     }
 }

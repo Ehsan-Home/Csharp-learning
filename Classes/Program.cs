@@ -6,13 +6,16 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            Vehicle bmw = new Vehicle(1234, "Z7", 2018, 4);
+            Vehicle bmw = new Vehicle(1234, "Z7", 2018, 4, "Blue");
 
-            Console.WriteLine(bmw.GetModelNumber());
+            bmw.ModelNumber = 9807;
 
-            bmw.SetModelNumber(3345);
+            Console.WriteLine(bmw.ModelNumber);
 
-            Console.WriteLine(bmw.GetModelNumber());
+            bmw.Model = "X3";
+
+            Console.WriteLine(bmw.Model);
+            Console.WriteLine(bmw.Color);
         }
     }
 }
